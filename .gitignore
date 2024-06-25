@@ -43,6 +43,9 @@ node_modules
 jspm_packages
 target
 dist
+app1
+*/app1
+/app1
 
 # Optional npm cache directory
 .npm
