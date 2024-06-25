@@ -1,0 +1,87 @@
+.confirmVideo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	height: 100vh;
+}
+
+.videoPlayer {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 32vw;
+	margin: 2rem;
+}
+
+.playVideo {
+	width: 32vw;
+	height: 24vw;
+	background-color: rgb(90, 90, 90, 0.7);
+}
+
+.timeElapsed {
+	position: absolute;
+	bottom: 0.25rem;
+	right: 0.25rem;
+	width: 7rem;
+	padding: 0.25rem 0.5rem;
+	border-radius: 1rem;
+	background: #3498db;
+	color: white;
+	text-align: center;
+	border: 3px solid black;
+}
+
+.controlButtons {
+	display: flex;
+	justify-content: space-around;
+	width: 80vw;
+	padding: 2rem;
+}
+
+.controlButton {
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 600;
+	background: #3498db;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border: 2px solid black;
+	cursor: pointer;
+	width: 15vw;
+}
+
+.controlButton:hover {
+	background: #3cb0fd;
+	text-decoration: none;
+}
+
+.controlButton:disabled {
+	background-color: white;
+	color: gray;
+	border: 2px solid gray;
+	cursor: no-drop;
+}
+
+.hr {
+	width: 80vw;
+	height: 1px;
+	background-color: black;
+	margin: 2rem;
+}
+
+.script {
+	max-height: 20vh;
+	font-weight: 800;
+	padding: 1rem 2rem;
+	margin: 1rem;
+	color: #6cbff7;
+	font-size: 24px;
+	background: black;
+	border-radius: 2rem;
+}

@@ -1,0 +1,91 @@
+.videoContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	height: 40vh;
+	margin: 0 1rem 1rem 1rem;
+	overflow-x: hidden;
+}
+
+.heading {
+	font-size: 42px;
+	font-weight: 800;
+	position: sticky;
+	top: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	background: white;
+	color: #3498db;
+	width: 100%;
+	padding: 1rem;
+}
+
+.headingText {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.scriptSize {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.scriptSizeButton {
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 1.25rem;
+	font-weight: 600;
+	background: #3498db;
+	text-decoration: none;
+	border: 2px solid black;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+}
+
+.scriptSizeButton:hover {
+	background: #3cb0fd;
+	text-decoration: none;
+}
+
+.textSizeHeading {
+	font-family: Arial;
+	background: #ffffff;
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+}
+
+.textSize {
+	font-family: Arial;
+	background: #ffffff;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #3498db;
+	text-decoration: none;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+}
+
+.hr {
+	width: 80vw;
+	height: 1px;
+	background-color: black;
+}
+
+.script {
+	max-height: 20vh;
+	font-weight: 600;
+	padding: 0.5rem;
+}

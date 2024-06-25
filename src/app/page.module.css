@@ -1,0 +1,24 @@
+.div,
+.p {
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.record {
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+

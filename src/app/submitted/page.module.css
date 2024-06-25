@@ -1,0 +1,19 @@
+.submitted {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.script {
+	max-height: 20vh;
+	font-weight: 800;
+	padding: 1rem 2rem;
+	margin: 1rem;
+	color: #6cbff7;
+	font-size: 24px;
+	background: black;
+	border-radius: 2rem;
+}

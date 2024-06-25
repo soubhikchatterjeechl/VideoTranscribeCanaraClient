@@ -1,0 +1,33 @@
+.controlButtons {
+	display: flex;
+	justify-content: space-around;
+	width: 80vw;
+}
+
+.controlButton {
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: 600;
+	background: #3498db;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border: 2px solid black;
+	cursor: pointer;
+    width: 15vw;
+}
+
+.controlButton:hover {
+	background: #3cb0fd;
+	text-decoration: none;
+}
+
+.controlButton:disabled {
+	background-color: white;
+	color: gray;
+	border: 2px solid gray;
+	cursor: no-drop;
+}
