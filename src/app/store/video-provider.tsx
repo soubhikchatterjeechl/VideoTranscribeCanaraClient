@@ -19,12 +19,12 @@ const VideoProvider: React.FC<{ children: React.ReactNode }> = ({
   const [videoBlob, setVideoBlob] = useState<Blob | null>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
   const playbackRef = useRef<HTMLVideoElement>(null);
-  const trimmedVideoBlobRef = useRef<Blob | null>(null);
   const [time, setTime] = useState<number>(0);
   const [videoTime, setVideoTime] = useState<number>(0);
   const timeInterval = useRef<NodeJS.Timeout | undefined>(undefined);
   const stopTimeInterval = useRef<NodeJS.Timeout | undefined>(undefined);
   const router = useRouter();
+  const videoExtension = "mp4";
 
   const stopRecording = () => {
     clearInterval(timeInterval.current);
@@ -55,7 +55,7 @@ const VideoProvider: React.FC<{ children: React.ReactNode }> = ({
     const options = {
       audioBitsPerSecond: 128000,
       videoBitsPerSecond: 2500000,
-      mimeType: "video/mp4",
+      mimeType: `video/webm;codecs=av1`,
     };
     const recorder = new MediaRecorder(stream, options);
     const chunks: Blob[] = [];
@@ -65,7 +65,9 @@ const VideoProvider: React.FC<{ children: React.ReactNode }> = ({
       }
     };
     recorder.onstop = () => {
-      const completeBlob = new Blob(chunks, { type: "video/webm" });
+      const completeBlob = new Blob(chunks, {
+        type: `video/${videoExtension}`,
+      });
       setVideoBlob(completeBlob);
     };
     recorder.start();
@@ -162,7 +164,7 @@ const VideoProvider: React.FC<{ children: React.ReactNode }> = ({
     }
     const formData = new FormData();
     setSubmitting(null);
-    formData.append("video", videoBlob, "recording.webm");
+    formData.append("video", videoBlob, `recording.${videoExtension}`);
     axios
       .post(`${process.env.NEXT_PUBLIC_API_URL}/videos/uploads`, formData, {
         headers: {
