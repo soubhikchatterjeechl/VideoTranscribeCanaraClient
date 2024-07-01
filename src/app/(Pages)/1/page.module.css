@@ -1,0 +1,46 @@
+.referenceNumber {
+    width: 90%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
+    margin-top: 2.5rem;
+	color: #ffffff;
+}
+
+.controlButton {
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	background: #3498db;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border: 2px solid black;
+	cursor: pointer;
+    width: 50%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.controlButton:hover {
+	background: #3cb0fd;
+	text-decoration: none;
+}
+
+.controlButton:disabled {
+	background-color: white;
+	color: gray;
+	border: 2px solid gray;
+	cursor: no-drop;
+}
+
+.heading {
+    font-size: x-large;
+    font-weight: 700;
+    margin-top: 2rem;
+}

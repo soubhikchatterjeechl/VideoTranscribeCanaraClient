@@ -1,0 +1,155 @@
+.controlButton {
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Arial;
+	color: black;
+	font-weight: 600;
+	background: white;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border: 2px solid black;
+	cursor: pointer;
+	text-align: center;
+	width: 50%;
+	margin-bottom: 1rem;
+}
+
+.heading {
+	font-size: x-large;
+	font-weight: 700;
+	margin-top: 0.5rem;
+}
+
+.card {
+	width: 100%;
+	display: flex;
+	padding: 0 0.5rem;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.infoItem {
+	width: 100%;
+	padding: 0.25rem;
+	margin-top: 1rem;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 2px solid black;
+	border-radius: 1rem;
+}
+
+.referenceNumber {
+	width: 90%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 1rem;
+	font-size: 18px;
+	padding: 0.5rem 1rem;
+	color: #ffffff;
+	margin-bottom: 0.5rem;
+}
+
+.personalInfo {
+	width: 95%;
+	background: rgb(0, 0, 0, 0.5);
+	padding: 1rem 1rem 1rem;
+	color: white;
+	font-size: 16px;
+	border-radius: 2rem;
+	margin-bottom: 1rem;
+}
+
+.detail {
+	margin-top: 0.5rem;
+}
+
+.label {
+	font-weight: 500;
+}
+
+.field {
+	background-color: white;
+	color: black;
+	padding: 0.25rem 0.75rem;
+	border: 1px solid black;
+	border-radius: 1rem;
+	margin-top: 0.25rem;
+	overflow-y: scroll;
+	height: 150px;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-evenly;
+	width: 90%;
+	align-items: center;
+	padding: 0.25rem;
+}
+
+.permissionCard {
+	padding: 1rem 0.5rem;
+	margin: 0 0 1rem;
+	width: 90%;
+	background-color: #ffffff;
+	border-radius: 2rem;
+	font-size: 18;
+	font-weight: 500;
+	text-align: center;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.image {
+	margin-bottom: 1rem;
+	width: 280px;
+	height: 210px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	align-items: center;
+}
+
+.detected {
+	width: 20%;
+	background-color: rgb(227, 227, 227);
+	border: 1px solid black;
+	padding: 0.25rem;
+	margin-bottom: 0.5rem;
+	border-radius: 0.25rem;
+}
+
+.notDetected {
+	width: 20%;
+	background-color: white;
+	border: 1px solid rgb(127, 127, 127);
+	color: rgb(127, 127, 127);
+	padding: 0.25rem;
+	margin-bottom: 0.5rem;
+	border-radius: 0.25rem;
+}
+
+.recordVideo {
+	width: 280px;
+	height: 210px;
+	background: rgb(127, 127, 127);
+}
+
+.timeElapsed {
+	position: absolute;
+	bottom: 0.25rem;
+	right: 0.25rem;
+	width: 7rem;
+	padding: 0.25rem 0.5rem;
+	border-radius: 1rem;
+	background: #3498db;
+	color: white;
+	text-align: center;
+	border: 3px solid black;
+}

@@ -1,0 +1,102 @@
+.controlButton {
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Arial;
+	color: black;
+	font-weight: 600;
+	background-color: white;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+	border: 2px solid black;
+	cursor: pointer;
+	text-align: center;
+	width: 40%;
+}
+
+.heading {
+	font-size: x-large;
+	font-weight: 700;
+	margin-top: 2px;
+}
+
+.card {
+	height: 160px;
+	width: 100%;
+	display: flex;
+	padding: 0 0.5rem;
+	justify-content: space-evenly;
+	margin-bottom: 0.5rem;
+	align-items: center;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	width: 180px;
+	justify-content: flex-start;
+	align-items: center;
+	height: 160px;
+}
+
+.infoItem {
+	width: 100%;
+	padding: 0.25rem;
+	margin-top: 1rem;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border: 2px solid black;
+	border-radius: 1rem;
+}
+
+.image {
+	margin-bottom: 1rem;
+	width: 200px;
+	height: 150px;
+	background-color: white;
+}
+
+.referenceNumber {
+	width: 90%;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 1rem;
+	font-size: 18px;
+	padding: 0.5rem 1rem;
+	color: #ffffff;
+	margin-bottom: 0.5rem;
+}
+
+.personalInfo {
+	width: 95%;
+	background: rgb(0, 0, 0, 0.5);
+	padding: 1rem 1rem 1rem;
+	color: white;
+	font-size: 16px;
+	border-radius: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.detail {
+	margin-top: 0.25rem;
+}
+
+.label {
+	font-weight: 500;
+}
+
+.field {
+	background-color: white;
+	color: black;
+	padding: 0.25rem 0.75rem;
+	border: 1px solid black;
+	border-radius: 1rem;
+}
+
+.flex {
+	display: flex;
+	justify-content: space-evenly;
+	width: 90%;
+}

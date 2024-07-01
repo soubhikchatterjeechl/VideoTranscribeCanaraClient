@@ -1,0 +1,102 @@
+"use client";
+import styles from "./page.module.css";
+import Button from "@/app/components/ui/Button";
+import { useEffect, useState, useContext } from "react";
+import Image from "next/image";
+import ErrorModal from "../../components/ErrorModal/ErrorModal";
+import VideoContext from "@/app/store/video-context";
+import { useRouter } from "next/navigation";
+
+const Welcome = () => {
+	const ctx = useContext(VideoContext);
+	const router = useRouter();
+	const [error, setError] = useState<boolean>(false);
+
+	useEffect(() => {
+		console.log(ctx.user);
+	});
+
+	const clickHandler = () => {
+		router.replace("/10and11");
+	};
+
+	const disagreement = () => {
+		setError(true);
+	};
+
+	const errorHandler = (err?: string) => {
+		if (err) {
+			ctx.user.disagreement.push(err);
+		}
+		setError(false);
+	};
+
+	return (
+		<>
+			{error && (
+				<ErrorModal
+					error={[
+						"Enter Your Disagreement In The Box Provided Below And Click Proceed.",
+					]}
+					buttonString="Proceed"
+					isInputAvailable={true}
+					errorHander={errorHandler}
+				/>
+			)}
+			<div className={`${styles.heading}`}>Plan Details</div>
+			<div className={styles.card}>
+				<div className={styles.infoItem}>
+					Proposal Number: 1234567890
+				</div>
+			</div>
+			<div className={styles.personalInfo}>
+				<div className={styles.detail}>
+					<div className={styles.label}>Plan Name</div>
+					<div className={styles.field}>
+						Canara Premium Life Insurance
+					</div>
+				</div>
+				<div className={styles.detail}>
+					<div className={styles.label}>Life Cover/ Sum Assured</div>
+					<div className={styles.field}>2000000</div>
+				</div>
+				<div className={styles.detail}>
+					<div className={styles.label}>Life Insured Name</div>
+					<div className={styles.field}>Self</div>
+				</div>
+				<div className={styles.detail}>
+					<div className={styles.label}>Premium Amount</div>
+					<div className={styles.field}>200000</div>
+				</div>
+				<div className={styles.detail}>
+					<div className={styles.label}>Premium Paying Term</div>
+					<div className={styles.field}>4 Years</div>
+				</div>
+				<div className={styles.detail}>
+					<div className={styles.label}>Policy Term</div>
+					<div className={styles.field}>20 Years</div>
+				</div>
+				<div className={styles.detail}>
+					<div className={styles.label}>Premium Paying</div>
+					<div className={styles.field}>Yearly</div>
+				</div>
+			</div>
+			<div className={styles.flex}>
+				<Button
+					className={styles.controlButton}
+					onClick={disagreement}
+				>
+					Disagree
+				</Button>
+				<Button
+					className={styles.controlButton}
+					onClick={clickHandler}
+				>
+					Agree
+				</Button>
+			</div>
+		</>
+	);
+};
+
+export default Welcome;
